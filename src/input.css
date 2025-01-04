@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .page-padding {
+      @apply px-6 sm:px-8 md:px-14 lg:px-20 desktop:px-[400px];
+    }
+    .paragraph{
+
+      @apply font-inter text-text font-normal text-xl;
+    }
+    .active.hs-carousel-active\:bg-blue-700{
+        @apply !bg-text !border-text;
+    }
+    .border-gray-400{
+        @apply !bg-[#D9D9D9] !border-[#D9D9D9];
+    }
+    .hs-carousel-body{
+        @apply !h-fit;
+    }
+}
